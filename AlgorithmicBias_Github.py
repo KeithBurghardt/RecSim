@@ -278,7 +278,8 @@ def semi_synth_sims(infile,outfile,GT,rand_rec,seed=None,epsilon=0.0):
 def main():
 
     # semi-synthetic simulations
-    semi_synth = True:
+    semi_synth = False
+
     if semi_synth:
         data_in_file = 'datasets/ml-25m/ratings.csv'
         for GT in [True]:
@@ -295,7 +296,7 @@ def main():
         # ID = GT probabilities
         ID = 23493#None
         # epsilon: probability to make random recommendations
-        eps = 1.0#0.1
+        eps = 0.1
         #RNG seed: let the initial conditions be the same, but stochasticity still develop. What happens?
         seed = None#3141
         # uniform beta
