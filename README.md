@@ -1,5 +1,5 @@
 # Recommendation System Simulations
-![plot](./figures/Framework.pdf?raw=true)
+![Framework](./figures/Framework.pdf)
 ## Required libraries:
 - pandas
 - numpy
