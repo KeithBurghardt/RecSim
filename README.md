@@ -1,5 +1,6 @@
 # Recommendation System Simulations
-
+This is code for 
+(Anonymous). Emergent Instabilities in Algorithmic Feedback Loops, 2022.
 
 ## Required libraries:
 - pandas
