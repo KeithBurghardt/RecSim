@@ -28,6 +28,19 @@ $ python AlgorithmicBias_Github.py
 ## What this code does
 Output are all parameters for model simulations and time-varying features of model, including item popularity, which can be used to calculate Gini coefficient, cumulative item popularity, etc.
 
+## Parameters
+- n: number of agents
+- m: number of items
+- k: Teacher model latent dimensions
+- ID: Random seed to create unique teacher model. Int number: seed, else None: new seed created at each realization
+- eps: Epsilon greedy parameter. 0.0: greedy strategy, 0.1: default epsilon-greedy strategy, 1.0: random strategy
+    #RNG seed: let the initial conditions be the same, but stochasticity still develop. What happens?
+- seed: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID
+- uniform_beta: Whether elements of the Beta matrix for the Teacher model are all the same (uniform_beta = False) or IID values between 0 and 1 (uniform_beta = True)
+- GT: If true, we use the oracle strategy (idealized upper bound on performance) 
+- realization: The unique number associated with a given realization of the simulation
+- **(Legacy):** rand_rec:  If true, we the model runs the random strategy. This is exactly the same as eps = 1.0 and so can be set to False 
+
 ## Output
 File name lists basic parameters for code, including whether uniform_beta = True (feature of teacher model)
 Pickle file with the following keys:
