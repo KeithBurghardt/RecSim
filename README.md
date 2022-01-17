@@ -14,10 +14,11 @@
     
     
 ## Required libraries:
-- pandas
-- numpy
-- tensorflow
-- scipy
+- [pandas](https://pypi.org/project/pandas/): Tested on 1.1.5
+- [numpy](https://numpy.org/install/): Tested on 1.19.5
+- [tensorflow](https://www.tensorflow.org/api_docs/python/tf): Tested on 2.6.1
+- [scipy](https://scipy.org/install/): Tested on 1.5.4
+
 
 ## To run
 - Modify required parameters in AlgorithmicBias_Github.py
