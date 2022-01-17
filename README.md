@@ -1,5 +1,7 @@
 # Recommendation System Simulations
-![Framework](./figures/Framework.pdf)
+
+
+<img src="./figures/Framework.pdf" width="90%"></img> 
 ## Required libraries:
 - pandas
 - numpy
