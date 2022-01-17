@@ -1,7 +1,18 @@
 # Recommendation System Simulations
 
 
-<img src="./figures/Framework.pdf" width="90%"></img> 
+<img src="./figures/Framework.png" width="90%"></img> 
+
+## Outline of simulation
+- *Teacher model* (left panel) tells agents the probability to choose any item recommended to them (Bernoulli trial for each choice)
+- *Student model* (right panel) estimates the probability agents will choose any item (including items not yet recommended)
+- Recommendation algorithm (right panel) recommends items to agents. There are 4 strategies
+    - Greedy: recommend new items to each agent that are most likely to be chosen 
+    - Epsilon-Greedy: 10% probability: recommend items at random, 90% probability: recommend new items to each agent that are most likely to be chosen 
+    - Random: Recommend items at random
+    - Oracle: Idealized case where student model is exactly the teacher model. This strategy shows upper bounds in recommendation algorithm performance.
+    
+    
 ## Required libraries:
 - pandas
 - numpy
