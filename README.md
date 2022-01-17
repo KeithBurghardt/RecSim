@@ -43,9 +43,9 @@ Output are all parameters for model simulations and time-varying features of mod
 - **(Legacy):** rand_rec:  If true, we the model runs the random strategy. This is exactly the same as eps = 1.0 and so can be set to False 
 
 ### collect_AB_sims
-- r: number of items recommended before the student model is retrained
-- fract_available: initial fraction of data used to train the student model (default = 0.001)
-- embeddings: latent features in student model (we output both 2 and 5 to test robustness). This parameter is "k'" in the paper.
+- *r*: number of items recommended before the student model is retrained
+- *fract_available*: initial fraction of data used to train the student model (default = 0.001)
+- *embeddings*: latent features in student model (we output both 2 and 5 to test robustness). This parameter is "k'" in the paper.
 
 ## Output
 File name lists basic parameters for code, including whether uniform_beta = True (feature of teacher model)
