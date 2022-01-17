@@ -30,9 +30,9 @@ Output are all parameters for model simulations and time-varying features of mod
 
 ## Parameters
 ### main()
-- *n*: number of agents
-- *m*: number of items
-- *k*: Teacher model latent dimensions
+- *n*: number of agents (default = 4000)
+- *m*: number of items (default = 200)
+- *k*: Teacher model latent dimensions (default = 4)
 - *ID*: Random seed to create unique teacher model. Set to an int number: seed number, else if set to None: new seed created at each realization
 - *eps*: Epsilon greedy parameter. 0.0: greedy strategy, 0.1: default epsilon-greedy strategy, 1.0: random strategy
 - *seed*: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID. If set to None, new seed made each realization
@@ -51,12 +51,12 @@ File name lists basic parameters for code, including whether uniform_beta = True
 Pickle file with the following keys:
 - 'P': Teacher model P
 - 'Q': Teacher model Q
-- 'n': Number of agents (default = 4000)
-- 'm': Number of items (default = 200)
-- 'k': Latent features in teacher model (default = 4)
+- 'n': Number of agents 
+- 'm': Number of items
+- 'k': Latent features in teacher model
 - 'beta': Beta scalar parameter for teacher model. If uniform_beta = True, this is always 0.0. 
 - 'r': Number of items recommended before model is retrained
-- 'fract_available': Initial data student model is trained on (default = 0.1%)
+- 'fract_available': Initial fraction of data student model is trained on
 - 'epsilon': Parameter for epsilon-greedy strategy (epsilon = 0.0 for greedy strategy, 0.1 for epsilon greedy strategy, and 1.0 for random strategy)
 - 'embeddings': Latent features in student model ("k'" in paper; default = 5)
 - 'realization': Always 1. Modifications to code can allow multiple realizations to be saved in 1 .pkl file
