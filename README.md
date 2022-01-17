@@ -29,16 +29,16 @@ $ python AlgorithmicBias_Github.py
 Output are all parameters for model simulations and time-varying features of model, including item popularity, which can be used to calculate Gini coefficient, cumulative item popularity, etc.
 
 ## Parameters
-- n: number of agents
-- m: number of items
-- k: Teacher model latent dimensions
-- ID: Random seed to create unique teacher model. Int number: seed, else None: new seed created at each realization
-- eps: Epsilon greedy parameter. 0.0: greedy strategy, 0.1: default epsilon-greedy strategy, 1.0: random strategy
+- *n*: number of agents
+- *m*: number of items
+- *k*: Teacher model latent dimensions
+- *ID*: Random seed to create unique teacher model. Int number: seed, else None: new seed created at each realization
+- *eps*: Epsilon greedy parameter. 0.0: greedy strategy, 0.1: default epsilon-greedy strategy, 1.0: random strategy
     #RNG seed: let the initial conditions be the same, but stochasticity still develop. What happens?
-- seed: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID
-- uniform_beta: Whether elements of the Beta matrix for the Teacher model are all the same (uniform_beta = False) or IID values between 0 and 1 (uniform_beta = True)
-- GT: If true, we use the oracle strategy (idealized upper bound on performance) 
-- realization: The unique number associated with a given realization of the simulation
+- *seed*: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID
+- *uniform_beta*: Whether elements of the Beta matrix for the Teacher model are all the same (uniform_beta = False) or IID values between 0 and 1 (uniform_beta = True)
+- *GT*: If true, we use the oracle strategy (idealized upper bound on performance) 
+- *realization*: The unique number associated with a given realization of the simulation
 - **(Legacy):** rand_rec:  If true, we the model runs the random strategy. This is exactly the same as eps = 1.0 and so can be set to False 
 
 ## Output
@@ -65,15 +65,15 @@ Pickle file with the following keys:
 ### sim_data 
 This key contains several features for each timestep (listed in order):
 
-- simulation timestep (values from 1 to m)
-- min_val: minimum valence error (Brier score)
+- Simulation timestep (values from 1 to m)
+- Minimum valence error (Brier score)
 - Number of user-item pairs not recommended
 - Popularity of each item (how many times they were chosen). Used to find mean item popularity, Gini coefficient **(statistics for Figs. 2, 4, 5b-c)**
-- 2 statistics:
+- Two statistics:
     - **(Legacy):** MSE error between student and teacher model probabilities
     - Brier score between trained student model and all collected user-item pairs **(statistic for Fig. 3, 5a)**
 - **(Legacy):** [the item the student model predicts each user is most likely to choose, the rank the student model gives to the ground truth most preferred item for each agent]
 - **(Legacy):** Correlations between student model-predicted popular items or users who pick many items and the teacher model ground truth
 
 ## Citation
-Anonymized for review purposes
+To be added later
