@@ -33,10 +33,9 @@ Output are all parameters for model simulations and time-varying features of mod
 - *n*: number of agents
 - *m*: number of items
 - *k*: Teacher model latent dimensions
-- *ID*: Random seed to create unique teacher model. Int number: seed, else None: new seed created at each realization
+- *ID*: Random seed to create unique teacher model. Set to an int number: seed number, else if set to None: new seed created at each realization
 - *eps*: Epsilon greedy parameter. 0.0: greedy strategy, 0.1: default epsilon-greedy strategy, 1.0: random strategy
-    #RNG seed: let the initial conditions be the same, but stochasticity still develop. What happens?
-- *seed*: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID
+- *seed*: Seed to initial conditions (what user-item pairs are initially 1 or 0 for initial student model training). Used in conjunction with ID. If set to None, new seed made each realization
 - *uniform_beta*: Whether elements of the Beta matrix for the Teacher model are all the same (uniform_beta = False) or IID values between 0 and 1 (uniform_beta = True)
 - *GT*: If true, we use the oracle strategy (idealized upper bound on performance) 
 - *realization*: The unique number associated with a given realization of the simulation
