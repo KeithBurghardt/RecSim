@@ -83,9 +83,11 @@ This key contains several features for each timestep (listed in order):
 ## Please cite as
 Keith Burghardt, Kristina Lerman. Emergent Instabilities in Algorithmic Feedback Loops. arXiv preprint: arXiv:2201.07203 (2022)
 
->@article{Burghardt2022,
->author={Keith Burghardt and Kristina Lerman},
->title={Emergent Instabilities in Algorithmic Feedback Loops},
->journal={arXiv preprint: arXiv:2201.07203},
->year={2022}
->}
+**Bibtex:**
+
+
+    @article{Burghardt2022,   
+    author={Keith Burghardt and Kristina Lerman},   
+    title={Emergent Instabilities in Algorithmic Feedback Loops},   
+    journal={arXiv preprint: arXiv:2201.07203},    
+    year={2022}}
