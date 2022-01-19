@@ -81,7 +81,7 @@ This key contains several features for each timestep (listed in order):
 - **(Legacy):** Correlations between student model-predicted popular items or users who pick many items and the teacher model ground truth
 
 ## Please cite as
-Keith Burghardt, Kristina Lerman. Emergent Instabilities in Algorithmic Feedback Loops. arXiv preprint: arXiv:2201.07203 (2022)
+Keith Burghardt, Kristina Lerman. Emergent Instabilities in Algorithmic Feedback Loops. arXiv preprint: [arXiv:2201.07203](https://arxiv.org/abs/2201.07203) (2022)
 
 **Bibtex:**
 
